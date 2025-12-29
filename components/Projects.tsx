@@ -109,7 +109,7 @@ export default function Projects() {
             image: '/api/placeholder/400/250',
             technologies: ['React.js', 'Node.js', 'WebSocket', 'Chart.js', 'Redis'],
             category: 'fintech',
-            liveUrl: 'https://niftytrader.com',
+            liveUrl: 'https://niftytrader.in',
             githubUrl: '#',
             featured: false,
             status: 'Live'

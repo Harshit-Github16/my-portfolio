@@ -169,7 +169,7 @@ export default function ProjectPortfolio() {
         },
         {
             title: "Nifty Trader - Stock Analysis",
-            url: "https://niftytrader.com",
+            url: "https://niftytrader.in",
             icon: "fas fa-chart-bar",
             tech: "React • Python • TradingView • WebSockets • Redis",
             description: [
