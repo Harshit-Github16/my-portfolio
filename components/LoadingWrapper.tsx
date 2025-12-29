@@ -11,20 +11,10 @@ export default function LoadingWrapper({ children }: LoadingWrapperProps) {
     const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
-        // Check if page has loaded before
-        const hasLoaded = sessionStorage.getItem('portfolioLoaded')
-
-        if (hasLoaded) {
-            // If already loaded in this session, skip loader
-            setIsLoading(false)
-            return
-        }
-
-        // Simulate loading time for first visit
+        // Always show loader for testing - remove session storage check
         const timer = setTimeout(() => {
             setIsLoading(false)
-            sessionStorage.setItem('portfolioLoaded', 'true')
-        }, 8000) // Increased to 4 seconds
+        }, 4000) // 4 seconds loading time
 
         return () => clearTimeout(timer)
     }, [])

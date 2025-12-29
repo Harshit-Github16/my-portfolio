@@ -9,7 +9,7 @@ export default function Loader() {
         // Simulate loading time
         const timer = setTimeout(() => {
             setIsLoading(false)
-        }, 8000) // Increased to 4 seconds loading time
+        }, 4000) // Increased to 4 seconds loading time
 
         return () => clearTimeout(timer)
     }, [])
