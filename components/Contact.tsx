@@ -102,7 +102,8 @@ export default function Contact() {
                     <div className="section-divider w-24 mx-auto mb-8"></div>
                     <p className="text-xl text-gray-400 max-w-3xl mx-auto">
                         Ready to bring your ideas to life? Let's discuss your next project and create
-                        something amazing together. I'm always excited to work on innovative solutions.
+                        something amazing together. Based in Jodhpur, Rajasthan, I serve clients across India
+                        and globally with cutting-edge web development solutions.
                     </p>
                 </div>
 
@@ -134,23 +135,7 @@ export default function Contact() {
                             ))}
                         </div>
 
-                        {/* Social Links */}
-                        <div className="mb-8">
-                            <h4 className="text-lg font-semibold mb-4 text-white">Follow Me</h4>
-                            <div className="flex space-x-4">
-                                {socialLinks.map((social, index) => (
-                                    <a
-                                        key={index}
-                                        href={social.url}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className={`w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 ${social.color} transition-all duration-300 hover-glow`}
-                                    >
-                                        <i className={social.icon}></i>
-                                    </a>
-                                ))}
-                            </div>
-                        </div>
+
 
                         {/* Quick Stats */}
                         <div className="glass p-6 rounded-xl">

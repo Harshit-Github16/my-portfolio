@@ -76,9 +76,9 @@ export default function Hero() {
                         </div>
 
                         <p className="text-xl text-gray-400 mb-8 max-w-2xl">
-                            Senior Full-Stack Developer with <span className="text-white font-semibold">4.5+ years</span> of experience
-                            building cutting-edge web applications and AI-powered solutions. Passionate about creating innovative
-                            digital experiences that drive business growth.
+                            Senior Full-Stack Developer in <span className="text-white font-semibold">Jodhpur, Rajasthan</span> with <span className="text-white font-semibold">4.5+ years</span> of experience
+                            building cutting-edge web applications and AI-powered solutions. Expert in Next.js, React.js, and modern web technologies
+                            serving clients across Rajasthan and India.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

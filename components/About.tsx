@@ -38,8 +38,8 @@ export default function About() {
                     </h2>
                     <div className="section-divider w-24 mx-auto mb-8"></div>
                     <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-                        Passionate about creating innovative solutions that bridge the gap between
-                        cutting-edge technology and real-world business needs.
+                        Leading Full Stack Developer in Jodhpur, Rajasthan, passionate about creating innovative solutions that bridge the gap between
+                        cutting-edge technology and real-world business needs across India.
                     </p>
                 </div>
 
@@ -49,19 +49,19 @@ export default function About() {
                         <h3 className="text-2xl font-bold mb-6 text-white">My Journey</h3>
                         <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
                             <p>
-                                I'm a <span className="text-white font-semibold">Senior Full-Stack Developer</span> with over
-                                4.5 years of experience in architecting and delivering cutting-edge web applications.
+                                I'm a <span className="text-white font-semibold">Senior Full-Stack Developer based in Jodhpur, Rajasthan</span> with over
+                                4.5 years of experience in architecting and delivering cutting-edge web applications across India.
                                 My journey began as a Junior Frontend Developer, and through continuous learning and
                                 dedication, I've evolved into a technical leader specializing in AI-driven development.
                             </p>
                             <p>
                                 Currently serving as a <span className="text-gray-300 font-semibold">Team Lead</span> at
-                                Now a Wave Technologies, I lead cross-functional teams in building enterprise-grade
+                                Now a Wave Technologies in Jodhpur, I lead cross-functional teams in building enterprise-grade
                                 applications that serve thousands of users worldwide. My expertise spans the entire
-                                development lifecycle, from concept to deployment.
+                                development lifecycle, from concept to deployment, with a focus on Next.js and React.js development.
                             </p>
                             <p>
-                                I'm particularly passionate about <span className="text-gray-400 font-semibold">AI integration</span> and
+                                As a <span className="text-gray-400 font-semibold">Next.js Developer in Rajasthan</span>, I'm particularly passionate about AI integration and
                                 have successfully implemented numerous automation systems using LangChain, OpenAI APIs,
                                 and other cutting-edge technologies that have reduced manual processing time by up to 65%.
                             </p>
@@ -126,10 +126,9 @@ export default function About() {
 
                 {/* Education */}
                 <div className="mt-16 glass p-8 rounded-xl">
-                    <h3 className="text-2xl font-bold mb-6 text-center text-white">Education & Certifications</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <h3 className="text-2xl font-bold mb-6 text-center text-white">Education</h3>
+                    <div className="grid grid-cols-1 gap-8">
                         <div>
-                            <h4 className="text-lg font-semibold text-white mb-2">Education</h4>
                             <div className="space-y-4">
                                 <div className="border-l-2 border-white pl-4">
                                     <h5 className="font-semibold text-white">Master of Computer Applications (MCA)</h5>
@@ -140,27 +139,6 @@ export default function About() {
                                     <h5 className="font-semibold text-white">Bachelor of Computer Applications (BCA)</h5>
                                     <p className="text-gray-400">Jai Narain Vyas University • 2019 – 2021</p>
                                     <p className="text-sm text-gray-500">First Class with Distinction</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h4 className="text-lg font-semibold text-gray-300 mb-2">Certifications</h4>
-                            <div className="space-y-2">
-                                <div className="flex items-center space-x-2">
-                                    <i className="fas fa-certificate text-white"></i>
-                                    <span className="text-gray-300">AWS Solutions Architect Associate</span>
-                                </div>
-                                <div className="flex items-center space-x-2">
-                                    <i className="fas fa-certificate text-gray-400"></i>
-                                    <span className="text-gray-300">Meta React Advanced Certification</span>
-                                </div>
-                                <div className="flex items-center space-x-2">
-                                    <i className="fas fa-certificate text-gray-300"></i>
-                                    <span className="text-gray-300">Google Cloud Professional Developer</span>
-                                </div>
-                                <div className="flex items-center space-x-2">
-                                    <i className="fas fa-trophy text-gray-200"></i>
-                                    <span className="text-gray-300">Employee of the Year 2024</span>
                                 </div>
                             </div>
                         </div>

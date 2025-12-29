@@ -39,25 +39,13 @@ export default function Skills() {
             skills: [
                 { name: 'LangChain', level: 85 },
                 { name: 'OpenAI API', level: 80 },
+                { name: 'LLM Models', level: 85 },
+                { name: 'AI Frameworks', level: 80 },
                 { name: 'Hugging Face', level: 75 },
-                { name: 'RAG Systems', level: 80 },
-                { name: 'Puppeteer', level: 85 },
-                { name: 'Cheerio', level: 90 }
+                { name: 'RAG Systems', level: 80 }
             ]
         },
-        {
-            title: 'Tools & Platforms',
-            icon: 'fas fa-tools',
-            color: 'black',
-            skills: [
-                { name: 'Git/GitHub', level: 90 },
-                { name: 'Docker', level: 70 },
-                { name: 'AWS', level: 75 },
-                { name: 'Vercel', level: 85 },
-                { name: 'Firebase', level: 80 },
-                { name: 'Stripe', level: 85 }
-            ]
-        }
+
     ]
 
     const softSkills = [
@@ -112,7 +100,7 @@ export default function Skills() {
                 </div>
 
                 {/* Technical Skills */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
                     {skillCategories.map((category, categoryIndex) => (
                         <div key={categoryIndex} className="glass p-6 rounded-xl hover-glow">
                             <div className="flex items-center mb-6">
@@ -166,32 +154,6 @@ export default function Skills() {
                     </div>
                 </div>
 
-                {/* Technology Stack */}
-                <div className="glass p-8 rounded-xl">
-                    <h3 className="text-2xl font-bold text-center mb-8 text-white">
-                        Technology <span className="gradient-text">Stack</span>
-                    </h3>
-                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6">
-                        {[
-                            { name: 'React', icon: 'fab fa-react', color: 'text-white' },
-                            { name: 'Node.js', icon: 'fab fa-node-js', color: 'text-gray-300' },
-                            { name: 'JavaScript', icon: 'fab fa-js-square', color: 'text-gray-400' },
-                            { name: 'Python', icon: 'fab fa-python', color: 'text-gray-500' },
-                            { name: 'AWS', icon: 'fab fa-aws', color: 'text-gray-600' },
-                            { name: 'Docker', icon: 'fab fa-docker', color: 'text-white' },
-                            { name: 'Git', icon: 'fab fa-git-alt', color: 'text-gray-300' },
-                            { name: 'MongoDB', icon: 'fas fa-database', color: 'text-gray-400' }
-                        ].map((tech, index) => (
-                            <div
-                                key={index}
-                                className="flex flex-col items-center p-4 rounded-lg hover:bg-gray-800 transition-all duration-300 hover-scale"
-                            >
-                                <i className={`${tech.icon} text-3xl ${tech.color} mb-2`}></i>
-                                <span className="text-xs text-gray-400 font-medium">{tech.name}</span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
 
                 {/* Skills Summary */}
                 <div className="mt-16 text-center">
