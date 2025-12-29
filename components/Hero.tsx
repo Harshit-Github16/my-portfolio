@@ -51,7 +51,7 @@ export default function Hero() {
     }
 
     return (
-        <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
+        <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 md:pt-16">
             {/* Background Animation */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute -inset-10 opacity-50">

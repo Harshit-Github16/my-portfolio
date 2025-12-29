@@ -6,18 +6,21 @@ import Experience from '../components/Experience'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import LoadingWrapper from '../components/LoadingWrapper'
 
 export default function Home() {
     return (
-        <main className="min-h-screen bg-black">
-            <Navigation />
-            <Hero />
-            <About />
-            <Skills />
-            <Experience />
-            <Projects />
-            <Contact />
-            <Footer />
-        </main>
+        <LoadingWrapper>
+            <main className="min-h-screen bg-black">
+                <Navigation />
+                <Hero />
+                <About />
+                <Skills />
+                <Experience />
+                <Projects />
+                <Contact />
+                <Footer />
+            </main>
+        </LoadingWrapper>
     )
 }
