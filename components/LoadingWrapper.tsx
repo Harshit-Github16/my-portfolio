@@ -11,10 +11,10 @@ export default function LoadingWrapper({ children }: LoadingWrapperProps) {
     const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
-        // Always show loader for testing - remove session storage check
+        // Always show loader for 2 seconds
         const timer = setTimeout(() => {
             setIsLoading(false)
-        }, 4000) // 4 seconds loading time
+        }, 2000) // 2 seconds loading time
 
         return () => clearTimeout(timer)
     }, [])

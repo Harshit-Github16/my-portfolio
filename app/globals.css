@@ -341,7 +341,7 @@ html {
 }
 
 .animate-loading-progress {
-    animation: loading-progress 4s ease-in-out;
+    animation: loading-progress 2s ease-in-out;
 }
 
 /* Enhanced Pulse Animation for Loader */
