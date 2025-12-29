@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit Sharma - Senior Full-Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#1e40af',
+                        'secondary': '#0f172a',
+                        'accent': '#3b82f6',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e40af 0%, #0f172a 100%);
+        }
+
+        .skill-tag {
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+        }
+
+        .section-divider {
+            background: linear-gradient(90deg, #1e40af, #3b82f6, #1e40af);
+            height: 2px;
+            border-radius: 1px;
+        }
+
+        .project-card {
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        @media print {
+            body {
+                font-size: 12px;
+            }
+
+            .no-print {
+                display: none;
+            }
+
+            .gradient-bg {
+                background: #1e40af !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .text-5xl {
+                font-size: 2.5rem;
+            }
+
+            .px-6 {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-inter">
+
+    <!-- Header Section -->
+    <header class="gradient-bg text-white">
+        <div class="max-w-6xl mx-auto px-6 py-12">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold mb-4 tracking-tight">
+                    HARSHIT SHARMA
+                </h1>
+                <p class="text-xl font-medium mb-6 opacity-90">
+                    Senior Frontend Developer
+                </p>
+                <div class="flex flex-wrap justify-center gap-6 text-sm">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Jodhpur, Rajasthan, India</span>
+                    </div>
+                    <div class="flex items-center gap-2"></div>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:harshit0150@gmail.com" class="hover:underline">harshit0150@gmail.com</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-phone"></i>
+                    <span>+91-9928005564</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="www.linkedin.com/in/harshit-sharma-9722a51a5"
+                        class="hover:underline">linkedin.com/in/harshit-sharma</a>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-6 py-8">
+
+        <!-- Professional Summary -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold text-secondary mb-4 flex items-center gap-3">
+                <i class="fas fa-user-tie text-primary"></i>
+                PROFESSIONAL SUMMARY
+            </h2>
+            <div class="section-divider mb-6"></div>
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-primary">
+                <p class="text-lg leading-relaxed text-gray-700">
+                    Innovative Senior Full-Stack Developer with <strong>4.5+ years</strong> of expertise in architecting
+                    and delivering
+                    cutting-edge web applications. Proven leader in <strong>AI-driven development</strong>, specializing
+                    in MERN stack,
+                    Next.js, and modern technologies. Successfully led cross-functional teams to deliver <strong>16+
+                        enterprise-grade
+                        applications</strong> serving over <strong>75K+ users</strong>. Passionate about leveraging
+                    emerging technologies like
+                    Generative AI, LangChain, and automation to drive digital transformation and business growth.
+                </p>
+            </div>
+        </section>
+
+        <!-- Core Competencies -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold text-secondary mb-4 flex items-center gap-3">
+                <i class="fas fa-cogs text-primary"></i>
+                CORE COMPETENCIES
+            </h2>
+            <div class="section-divider mb-6"></div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-lg mb-4 text-primary">Technical Leadership</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> Team
+                            Leadership & Mentoring</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> Agile
+                            Project Management</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> Code
+                            Architecture & Review</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> Performance
+                            Optimization</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-lg mb-4 text-primary">AI & Innovation</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> Generative
+                            AI Integration</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> LLM API
+                            Development</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> Workflow
+                            Automation</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> Machine
+                            Learning Pipelines</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold text-secondary mb-4 flex items-center gap-3">
+                <i class="fas fa-code text-primary"></i>
+                TECHNICAL EXPERTISE
+            </h2>
+            <div class="section-divider mb-6"></div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div>
+                        <h3 class="font-semibold text-primary mb-3">Frontend Technologies</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm font-medium">React.js</span>
+                            <span
+                                class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm font-medium">Next.js</span>
+                            <span
+                                class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm font-medium">TypeScript</span>
+                            <span
+                                class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm font-medium">Tailwind
+                                CSS</span>
+                            <span
+                                class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm font-medium">Redux</span>
+                            <span
+                                class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm font-medium">HTML5/CSS3</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-primary mb-3">Backend Technologies</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm font-medium">Node.js</span>
+                            <span
+                                class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm font-medium">Express.js</span>
+                            <span
+                                class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm font-medium">MongoDB</span>
+                            <span
+                                class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm font-medium">PostgreSQL</span>
+                            <span
+                                class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm font-medium">RESTful
+                                APIs</span>
+                            <span
+                                class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm font-medium">GraphQL</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-primary mb-3">AI & Automation</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm font-medium">LangChain</span>
+                            <span
+                                class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm font-medium">OpenAI
+                                API</span>
+                            <span
+                                class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm font-medium">Hugging
+                                Face</span>
+                            <span
+                                class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm font-medium">RAG
+                                Systems</span>
+                            <span
+                                class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm font-medium">Puppeteer</span>
+                            <span
+                                class="skill-tag bg-blue-50 text-primary px-3 py-1 rounded-full text-sm font-medium">Cheerio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Professional Experience -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold text-secondary mb-4 flex items-center gap-3">
+                <i class="fas fa-briefcase text-primary"></i>
+                PROFESSIONAL EXPERIENCE
+            </h2>
+            <div class="section-divider mb-6"></div>
+
+            <div class="space-y-6">
+                <!-- Current Role -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-primary">
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-secondary">Team Lead / MERN Stack Developer</h3>
+                            <p class="text-primary font-semibold">Now a Wave Technologies Pvt. Ltd.</p>
+                        </div>
+                        <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">Aug 2023 –
+                            Present</span>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-arrow-right text-primary mt-1 text-sm"></i>
+                            <span>Leading a cross-functional team of <strong>8+ developers</strong> in delivering
+                                AI-powered enterprise applications with <strong>99.5% uptime</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-arrow-right text-primary mt-1 text-sm"></i>
+                            <span>Architected and deployed <strong>12+ AI-driven automation systems</strong> using
+                                LangChain and OpenAI, reducing manual processing time by <strong>65%</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-arrow-right text-primary mt-1 text-sm"></i>
+                            <span>Implemented microservices architecture serving <strong>25K+ concurrent users</strong>
+                                with sub-200ms response times</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-arrow-right text-primary mt-1 text-sm"></i>
+                            <span>Established CI/CD pipelines and code review processes, improving deployment frequency
+                                by <strong>300%</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-arrow-right text-primary mt-1 text-sm"></i>
+                            <span>Mentored junior developers and conducted technical interviews, maintaining <strong>95%
+                                    client satisfaction</strong> rate</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Previous Roles -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-secondary">Web Developer</h3>
+                            <p class="text-primary font-semibold">Latnip IT Solutions</p>
+                        </div>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Jun 2023 – Nov
+                            2023</span>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-arrow-right text-primary mt-1 text-sm"></i>
+                            <span>Developed <strong>15+ responsive React applications</strong> with modern UI/UX,
+                                achieving <strong>98% mobile compatibility</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-arrow-right text-primary mt-1 text-sm"></i>
+                            <span>Optimized application performance through code splitting and lazy loading, reducing
+                                bundle size by <strong>45%</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-arrow-right text-primary mt-1 text-sm"></i>
+                            <span>Collaborated with design teams to implement pixel-perfect UI components and
+                                interactive features</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-arrow-right text-primary mt-1 text-sm"></i>
+                            <span>Integrated third-party APIs and payment gateways for enhanced functionality</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-secondary">Assistant Software Developer</h3>
+                            <p class="text-primary font-semibold">Viddius Solutions Pvt. Ltd.</p>
+                        </div>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Dec 2021 – Jun
+                            2023</span>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-arrow-right text-primary mt-1 text-sm"></i>
+                            <span>Built and maintained <strong>20+ production websites</strong> serving <strong>15K+
+                                    daily active users</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-arrow-right text-primary mt-1 text-sm"></i>
+                            <span>Implemented SEO best practices and performance optimizations, improving search
+                                rankings by <strong>75%</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-arrow-right text-primary mt-1 text-sm"></i>
+                            <span>Developed full-stack applications using MERN stack with focus on scalability and
+                                maintainability</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-arrow-right text-primary mt-1 text-sm"></i>
+                            <span>Collaborated with backend teams to integrate RESTful APIs and ensure data
+                                consistency</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Junior Frontend Developer Role -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-secondary">Junior Frontend Developer</h3>
+                            <p class="text-primary font-semibold">Aquila Solution Pvt. Ltd.</p>
+                        </div>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">2019 – 2021</span>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-arrow-right text-primary mt-1 text-sm"></i>
+                            <span>Started career as frontend developer, building responsive web interfaces using
+                                <strong>HTML, CSS, and JavaScript</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-arrow-right text-primary mt-1 text-sm"></i>
+                            <span>Learned and implemented <strong>React.js fundamentals</strong>, contributing to
+                                component-based architecture</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-arrow-right text-primary mt-1 text-sm"></i>
+                            <span>Participated in code reviews and gained experience in <strong>version control with
+                                    Git</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-arrow-right text-primary mt-1 text-sm"></i>
+                            <span>Worked closely with senior developers to understand software development lifecycle and
+                                best practices</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Portfolio -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold text-secondary mb-4 flex items-center gap-3">
+                <i class="fas fa-rocket text-primary"></i>
+                PROJECT PORTFOLIO
+            </h2>
+            <div class="section-divider mb-6"></div>
+
+            <!-- AI & Machine Learning Projects -->
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
+                    <i class="fas fa-brain"></i>
+                    AI & Machine Learning Solutions
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="project-card bg-white p-6 rounded-lg shadow-sm border-l-4 border-primary">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-robot text-2xl text-primary"></i>
+                            <div>
+                                <h4 class="text-lg font-bold text-secondary">TARA - AI Emotional Companion</h4>
+                                <a href="https://tara4u.com"
+                                    class="text-xs text-blue-600 hover:underline">tara4u.com</a>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Next.js • OpenAI API • LangChain • PostgreSQL • WebRTC</p>
+                        <ul class="space-y-1 text-sm text-gray-700 mb-4">
+                            <li>• Built AI-powered emotional support platform for mental wellness</li>
+                            <li>• Integrated advanced NLP models for empathetic conversations</li>
+                            <li>• Implemented real-time chat with sentiment analysis</li>
+                            <li>• Achieved 85% user satisfaction in emotional support delivery</li>
+                        </ul>
+                        <div class="flex gap-2">
+                            <span class="bg-blue-50 text-primary px-2 py-1 rounded text-xs">AI-Powered</span>
+                            <span class="bg-primary text-white px-2 py-1 rounded text-xs">Production</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card bg-white p-6 rounded-lg shadow-sm border-l-4 border-primary">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-chart-line text-2xl text-primary"></i>
+                            <div>
+                                <h4 class="text-lg font-bold text-secondary">Stokezee - AI Trading Platform</h4>
+                                <a href="https://stokezee.com"
+                                    class="text-xs text-blue-600 hover:underline">stokezee.com</a>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">React • Python • TensorFlow • WebSockets • Chart.js</p>
+                        <ul class="space-y-1 text-sm text-gray-700 mb-4">
+                            <li>• Developed AI-based stock screener with machine learning algorithms</li>
+                            <li>• Built intraday trading booster with predictive analytics</li>
+                            <li>• Integrated real-time market data with advanced charting</li>
+                            <li>• Achieved 78% accuracy in stock trend predictions</li>
+                        </ul>
+                        <div class="flex gap-2">
+                            <span class="bg-blue-50 text-primary px-2 py-1 rounded text-xs">AI Trading</span>
+                            <span class="bg-primary text-white px-2 py-1 rounded text-xs">FinTech</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card bg-white p-6 rounded-lg shadow-sm border-l-4 border-primary">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-newspaper text-2xl text-primary"></i>
+                            <div>
+                                <h4 class="text-lg font-bold text-secondary">AI News Portal & Scraper</h4>
+                                <a href="https://news-dashboard-lnhk.vercel.app/"
+                                    class="text-xs text-blue-600 hover:underline">news-dashboard-lnhk.vercel.app</a>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Node.js • Puppeteer • Cheerio • OpenAI • MongoDB</p>
+                        <ul class="space-y-1 text-sm text-gray-700 mb-4">
+                            <li>• Built automated news scraping system using Puppeteer & Cheerio</li>
+                            <li>• Integrated LLM models for content reformation and summarization</li>
+                            <li>• Implemented real-time news aggregation from multiple sources</li>
+                            <li>• Processed 1000+ articles daily with 95% accuracy</li>
+                        </ul>
+                        <div class="flex gap-2">
+                            <span class="bg-blue-50 text-primary px-2 py-1 rounded text-xs">AI Content</span>
+                            <span class="bg-primary text-white px-2 py-1 rounded text-xs">Automation</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card bg-white p-6 rounded-lg shadow-sm border-l-4 border-primary">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-balance-scale text-2xl text-primary"></i>
+                            <div>
+                                <h4 class="text-lg font-bold text-secondary">HAELO - Judiciary Management</h4>
+                                <a href="https://haeloapp.in/web/login"
+                                    class="text-xs text-blue-600 hover:underline">haeloapp.in/web/login</a>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">MERN Stack • ElasticSearch • PDF Processing • JWT</p>
+                        <ul class="space-y-1 text-sm text-gray-700 mb-4">
+                            <li>• Developed comprehensive judgment management system for High Court</li>
+                            <li>• Implemented advanced search and categorization for legal documents</li>
+                            <li>• Built advocate portal with case tracking and notifications</li>
+                            <li>• Managed 10K+ legal documents with efficient retrieval system</li>
+                        </ul>
+                        <div class="flex gap-2">
+                            <span class="bg-blue-50 text-primary px-2 py-1 rounded text-xs">Legal Tech</span>
+                            <span class="bg-primary text-white px-2 py-1 rounded text-xs">Government</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SaaS & Enterprise Solutions -->
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
+                    <i class="fas fa-cloud"></i>
+                    SaaS & Enterprise Solutions
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="project-card bg-white p-6 rounded-lg shadow-sm border-l-4 border-primary">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-shield-alt text-2xl text-primary"></i>
+                            <div>
+                                <h4 class="text-lg font-bold text-secondary">Cyber Security SaaS Platform</h4>
+                                <a href="https://console.aquilai.io"
+                                    class="text-xs text-blue-600 hover:underline">console.aquilai.io</a>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Next.js • Node.js • MongoDB • AWS • Docker</p>
+                        <ul class="space-y-1 text-sm text-gray-700 mb-4">
+                            <li>• Built comprehensive DMARC, BIMI & domain monitoring system</li>
+                            <li>• Implemented email archival and BAS (Brand Abuse System)</li>
+                            <li>• Developed multi-tenant architecture for enterprise clients</li>
+                            <li>• Secured 50+ companies with automated threat detection</li>
+                        </ul>
+                        <div class="flex gap-2">
+                            <span class="bg-blue-50 text-primary px-2 py-1 rounded text-xs">CyberSec</span>
+                            <span class="bg-primary text-white px-2 py-1 rounded text-xs">Enterprise</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card bg-white p-6 rounded-lg shadow-sm border-l-4 border-primary">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-calculator text-2xl text-primary"></i>
+                            <div>
+                                <h4 class="text-lg font-bold text-secondary">GST Simulator & Finance SaaS</h4>
+                                <a href="https://bill-karo.vercel.app"
+                                    class="text-xs text-blue-600 hover:underline">bill-karo.vercel.app</a>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">React • Node.js • PostgreSQL • Stripe • PDF Generation</p>
+                        <ul class="space-y-1 text-sm text-gray-700 mb-4">
+                            <li>• Developed automated GST filing and finance management system</li>
+                            <li>• Built intelligent tax calculation with compliance automation</li>
+                            <li>• Integrated payment processing and invoice generation</li>
+                            <li>• Reduced CA dependency by 80% for small businesses</li>
+                        </ul>
+                        <div class="flex gap-2">
+                            <span class="bg-blue-50 text-primary px-2 py-1 rounded text-xs">FinTech</span>
+                            <span class="bg-primary text-white px-2 py-1 rounded text-xs">Automation</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card bg-white p-6 rounded-lg shadow-sm border-l-4 border-primary">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-hospital text-2xl text-primary"></i>
+                            <div>
+                                <h4 class="text-lg font-bold text-secondary">Hospital Management SaaS</h4>
+                                <span class="text-xs text-gray-500">Healthcare Solution</span>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">MERN Stack • Socket.io • AWS S3 • JWT • Charts.js</p>
+                        <ul class="space-y-1 text-sm text-gray-700 mb-4">
+                            <li>• Built comprehensive hospital management with patient records</li>
+                            <li>• Implemented appointment scheduling and billing system</li>
+                            <li>• Developed real-time notifications for staff coordination</li>
+                            <li>• Managed 5K+ patient records with HIPAA compliance</li>
+                        </ul>
+                        <div class="flex gap-2">
+                            <span class="bg-blue-50 text-primary px-2 py-1 rounded text-xs">Healthcare</span>
+                            <span class="bg-primary text-white px-2 py-1 rounded text-xs">SaaS</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card bg-white p-6 rounded-lg shadow-sm border-l-4 border-primary">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-cash-register text-2xl text-primary"></i>
+                            <div>
+                                <h4 class="text-lg font-bold text-secondary">MuneemJi - Restaurant POS</h4>
+                                <a href="https://muneemji-pos.vercel.app"
+                                    class="text-xs text-blue-600 hover:underline">muneemji-pos.vercel.app</a>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Next.js • Node.js • MongoDB • Stripe • PWA</p>
+                        <ul class="space-y-1 text-sm text-gray-700 mb-4">
+                            <li>• Developed complete POS system for restaurant management</li>
+                            <li>• Built inventory tracking and sales analytics dashboard</li>
+                            <li>• Implemented offline-first PWA with sync capabilities</li>
+                            <li>• Increased restaurant efficiency by 40% with automated billing</li>
+                        </ul>
+                        <div class="flex gap-2">
+                            <span class="bg-blue-50 text-primary px-2 py-1 rounded text-xs">POS System</span>
+                            <span class="bg-primary text-white px-2 py-1 rounded text-xs">Live</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Educational & Learning Platforms -->
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
+                    <i class="fas fa-graduation-cap"></i>
+                    Educational & Learning Platforms
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="project-card bg-white p-6 rounded-lg shadow-sm border-l-4 border-primary">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-play-circle text-2xl text-primary"></i>
+                            <div>
+                                <h4 class="text-lg font-bold text-secondary">LMS - Cyber Security Learning</h4>
+                                <a href="https://lms.aquilai.io"
+                                    class="text-xs text-blue-600 hover:underline">lms.aquilai.io</a>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Next.js • Node.js • MongoDB • AWS S3 • Video Streaming</p>
+                        <ul class="space-y-1 text-sm text-gray-700 mb-4">
+                            <li>• Built comprehensive LMS with video streaming capabilities</li>
+                            <li>• Developed interactive cyber security awareness games</li>
+                            <li>• Implemented progress tracking and certification system</li>
+                            <li>• Served 2K+ learners with 95% course completion rate</li>
+                        </ul>
+                        <div class="flex gap-2">
+                            <span class="bg-blue-50 text-primary px-2 py-1 rounded text-xs">EdTech</span>
+                            <span class="bg-primary text-white px-2 py-1 rounded text-xs">CyberSec</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card bg-white p-6 rounded-lg shadow-sm border-l-4 border-primary">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-music text-2xl text-primary"></i>
+                            <div>
+                                <h4 class="text-lg font-bold text-secondary">Dance Academy Platform</h4>
+                                <a href="https://thedancetales.com"
+                                    class="text-xs text-blue-600 hover:underline">thedancetales.com</a>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">React • Node.js • MongoDB • Stripe • Video Integration</p>
+                        <ul class="space-y-1 text-sm text-gray-700 mb-4">
+                            <li>• Developed dance academy website with class booking system</li>
+                            <li>• Built instructor profiles and student progress tracking</li>
+                            <li>• Integrated payment processing for course enrollments</li>
+                            <li>• Enhanced student engagement with interactive features</li>
+                        </ul>
+                        <div class="flex gap-2">
+                            <span class="bg-blue-50 text-primary px-2 py-1 rounded text-xs">Education</span>
+                            <span class="bg-primary text-white px-2 py-1 rounded text-xs">Live</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business & E-commerce Solutions -->
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
+                    <i class="fas fa-store"></i>
+                    Business & E-commerce Solutions
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="project-card bg-white p-6 rounded-lg shadow-sm border-l-4 border-primary">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-paw text-2xl text-primary"></i>
+                            <div>
+                                <h4 class="text-lg font-bold text-secondary">We Are Dogs - Pet Store</h4>
+                                <a href="https://wearedogs.com"
+                                    class="text-xs text-blue-600 hover:underline">wearedogs.com</a>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Next.js • MongoDB • Stripe • Tailwind CSS • Node.js</p>
+                        <ul class="space-y-1 text-sm text-gray-700 mb-4">
+                            <li>• Built complete e-commerce platform for pet products</li>
+                            <li>• Integrated inventory management and order tracking</li>
+                            <li>• Implemented customer reviews and recommendation system</li>
+                            <li>• Achieved 60% increase in online sales conversion</li>
+                        </ul>
+                        <div class="flex gap-2">
+                            <span class="bg-blue-50 text-primary px-2 py-1 rounded text-xs">E-commerce</span>
+                            <span class="bg-primary text-white px-2 py-1 rounded text-xs">Production</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card bg-white p-6 rounded-lg shadow-sm border-l-4 border-primary">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-trophy text-2xl text-primary"></i>
+                            <div>
+                                <h4 class="text-lg font-bold text-secondary">Yuva Kabaddi Premier League</h4>
+                                <a href="https://www.yuvakabaddi.com"
+                                    class="text-xs text-blue-600 hover:underline">yuvakabaddi.com</a>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">React • Node.js • MongoDB • Socket.io • AWS</p>
+                        <ul class="space-y-1 text-sm text-gray-700 mb-4">
+                            <li>• Developed sports league website with live scoring system</li>
+                            <li>• Built player profiles, team management, and match scheduling</li>
+                            <li>• Implemented real-time match updates and statistics</li>
+                            <li>• Engaged 10K+ sports enthusiasts with live features</li>
+                        </ul>
+                        <div class="flex gap-2">
+                            <span class="bg-blue-50 text-primary px-2 py-1 rounded text-xs">Sports</span>
+                            <span class="bg-primary text-white px-2 py-1 rounded text-xs">Live</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card bg-white p-6 rounded-lg shadow-sm border-l-4 border-primary">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-chart-bar text-2xl text-primary"></i>
+                            <div>
+                                <h4 class="text-lg font-bold text-secondary">Nifty Trader - Stock Analysis</h4>
+                                <a href="https://niftytrader.com"
+                                    class="text-xs text-blue-600 hover:underline">niftytrader.com</a>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">React • Python • TradingView • WebSockets • Redis</p>
+                        <ul class="space-y-1 text-sm text-gray-700 mb-4">
+                            <li>• Built comprehensive stock analysis and screening platform</li>
+                            <li>• Integrated real-time market data with advanced charting</li>
+                            <li>• Developed custom stock screeners with multiple filters</li>
+                            <li>• Provided actionable insights to 5K+ active traders</li>
+                        </ul>
+                        <div class="flex gap-2">
+                            <span class="bg-blue-50 text-primary px-2 py-1 rounded text-xs">Trading</span>
+                            <span class="bg-primary text-white px-2 py-1 rounded text-xs">Analytics</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card bg-white p-6 rounded-lg shadow-sm border-l-4 border-primary">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-shield-virus text-2xl text-primary"></i>
+                            <div>
+                                <h4 class="text-lg font-bold text-secondary">Aquila Cyber Security</h4>
+                                <a href="https://aquilai.io"
+                                    class="text-xs text-blue-600 hover:underline">aquilai.io</a>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Next.js • Node.js • MongoDB • AWS • Security APIs</p>
+                        <ul class="space-y-1 text-sm text-gray-700 mb-4">
+                            <li>• Developed corporate cyber security solutions website</li>
+                            <li>• Built threat assessment and security audit tools</li>
+                            <li>• Implemented client portal for security monitoring</li>
+                            <li>• Secured 100+ enterprise clients with custom solutions</li>
+                        </ul>
+                        <div class="flex gap-2">
+                            <span class="bg-blue-50 text-primary px-2 py-1 rounded text-xs">CyberSec</span>
+                            <span class="bg-primary text-white px-2 py-1 rounded text-xs">Corporate</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card bg-white p-6 rounded-lg shadow-sm border-l-4 border-primary">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-leaf text-2xl text-primary"></i>
+                            <div>
+                                <h4 class="text-lg font-bold text-secondary">Gausetu - Gaushala Management</h4>
+                                <a href="https://gausetu.vercel.app/"
+                                    class="text-xs text-blue-600 hover:underline">gausetu.vercel.app</a>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Next.js • MongoDB • Node.js • Tailwind CSS • JWT</p>
+                        <ul class="space-y-1 text-sm text-gray-700 mb-4">
+                            <li>• Built comprehensive gaushala (cow shelter) management system</li>
+                            <li>• Implemented donation tracking and volunteer management</li>
+                            <li>• Developed cattle health monitoring and feeding schedules</li>
+                            <li>• Created transparency portal for donors and supporters</li>
+                        </ul>
+                        <div class="flex gap-2">
+                            <span class="bg-blue-50 text-primary px-2 py-1 rounded text-xs">Social Impact</span>
+                            <span class="bg-primary text-white px-2 py-1 rounded text-xs">Non-Profit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Education & Certifications -->
+        <section class="mb-10">
+            <div class=" gap-8">
+                <div>
+                    <h2 class="text-2xl font-bold text-secondary mb-4 flex items-center gap-3">
+                        <i class="fas fa-graduation-cap text-primary"></i>
+                        EDUCATION
+                    </h2>
+                    <div class="section-divider mb-6"></div>
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h3 class="font-bold text-secondary">Master of Computer Applications (MCA)</h3>
+                            <p class="text-primary font-medium">Bikaner University</p>
+                            <p class="text-sm text-gray-600">Aug 2024 – Present • CGPA: 8.7/10</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h3 class="font-bold text-secondary">Bachelor of Computer Applications (BCA)</h3>
+                            <p class="text-primary font-medium">Jai Narain Vyas University</p>
+                            <p class="text-sm text-gray-600">2019 – 2021 • First Class with Distinction</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-6 mt-12">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-sm opacity-80">
+                © 2024 Harshit Sharma. Crafted with passion for technology and innovation.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>""
