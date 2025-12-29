@@ -12,7 +12,7 @@ export default function Hero() {
     const roles = [
         'Full-Stack Developer',
         'AI Solutions Architect',
-        'MERN Stack Expert',
+        'Front-end Developer',
         'Team Lead',
         'Tech Innovator'
     ]
@@ -101,15 +101,7 @@ export default function Hero() {
                         {/* Social Links */}
                         <div className="flex justify-center lg:justify-start space-x-6 mt-8">
                             <a
-                                href="https://github.com/harshit-sharma"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-gray-400 hover:text-white hover-glow p-3 rounded-full bg-gray-800 hover:bg-gray-700 transition-all duration-300"
-                            >
-                                <i className="fab fa-github text-xl"></i>
-                            </a>
-                            <a
-                                href="https://linkedin.com/in/harshit-sharma"
+                                href="https://www.linkedin.com/in/harshit-sharma-9722a51a5"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-400 hover:text-white hover-glow p-3 rounded-full bg-gray-800 hover:bg-gray-700 transition-all duration-300"

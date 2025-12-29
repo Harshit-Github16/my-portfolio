@@ -27,25 +27,15 @@ export default function Header() {
                         <div className="flex items-center gap-2">
                             <i className="fab fa-linkedin"></i>
                             <a
-                                href="https://linkedin.com/in/harshit-sharma"
+                                href="https://www.linkedin.com/in/harshit-sharma-9722a51a5"
                                 className="hover:underline"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                linkedin.com/in/harshit-sharma
+                                linkedin.com/in/harshit-sharma-9722a51a5
                             </a>
                         </div>
-                        <div className="flex items-center gap-2">
-                            <i className="fab fa-github"></i>
-                            <a
-                                href="https://github.com/harshit-sharma"
-                                className="hover:underline"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                github.com/harshit-sharma
-                            </a>
-                        </div>
+
                     </div>
                 </div>
             </div>

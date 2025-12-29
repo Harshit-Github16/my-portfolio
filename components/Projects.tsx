@@ -8,6 +8,18 @@ export default function Projects() {
     const projects = [
         {
             id: 1,
+            title: 'Nifty Trader - Stock Analysis',
+            description: 'Advanced trading platform with comprehensive stock analysis, screeners, technical indicators, and real-time market data for informed trading decisions.',
+            image: '/api/placeholder/400/250',
+            technologies: ['React.js', 'Node.js', 'WebSocket', 'Chart.js', 'Redis'],
+            category: 'fintech',
+            liveUrl: 'https://niftytrader.in',
+            githubUrl: '#',
+            featured: true,
+            status: 'Live'
+        },
+        {
+            id: 2,
             title: 'HAELO - Judiciary Management System',
             description: 'A comprehensive judiciary project for high court judgments where we manage all judgments of court for advocates. Features advanced search, case tracking, and document management.',
             image: '/api/placeholder/400/250',
@@ -15,11 +27,11 @@ export default function Projects() {
             category: 'enterprise',
             liveUrl: 'https://haeloapp.in/web/login',
             githubUrl: '#',
-            featured: true,
+            featured: false,
             status: 'Live'
         },
         {
-            id: 2,
+            id: 3,
             title: 'AI News Portal & Scraper',
             description: 'Advanced news scraper using Puppeteer and Cheerio to scrape news from various websites. Reformed content using LLM models for enhanced readability and categorization.',
             image: '/api/placeholder/400/250',
@@ -27,7 +39,7 @@ export default function Projects() {
             category: 'ai',
             liveUrl: 'https://news-dashboard-lnhk.vercel.app/',
             githubUrl: '#',
-            featured: true,
+            featured: false,
             status: 'Live'
         },
         {
@@ -147,7 +159,7 @@ export default function Projects() {
             category: 'fintech',
             liveUrl: 'https://stokezee.com',
             githubUrl: '#',
-            featured: false,
+            featured: true,
             status: 'Live'
         },
         {
