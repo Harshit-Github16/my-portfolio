@@ -157,7 +157,7 @@ export default function Projects() {
             image: '/api/placeholder/400/250',
             technologies: ['React.js', 'Python', 'TensorFlow', 'WebSocket', 'Redis'],
             category: 'fintech',
-            liveUrl: 'https://stokezee.com',
+            liveUrl: 'https://www.stockezee.com/',
             githubUrl: '#',
             featured: true,
             status: 'Live'

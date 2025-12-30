@@ -17,7 +17,7 @@ export default function ProjectPortfolio() {
         },
         {
             title: "Stokezee - AI Trading Platform",
-            url: "https://stokezee.com",
+            url: "https://www.stockezee.com/",
             icon: "fas fa-chart-line",
             tech: "React • Python • TensorFlow • WebSockets • Chart.js",
             description: [
