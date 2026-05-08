@@ -83,19 +83,7 @@ export default function ProjectPortfolio() {
             ],
             tags: ["FinTech", "Automation"]
         },
-        {
-            title: "Hospital Management SaaS",
-            url: null,
-            icon: "fas fa-hospital",
-            tech: "MERN Stack • Socket.io • AWS S3 • JWT • Charts.js",
-            description: [
-                "Built comprehensive hospital management with patient records",
-                "Implemented appointment scheduling and billing system",
-                "Developed real-time notifications for staff coordination",
-                "Managed 5K+ patient records with HIPAA compliance"
-            ],
-            tags: ["Healthcare", "SaaS"]
-        },
+
         {
             title: "MuneemJi - Restaurant POS",
             url: "https://muneemji-pos.vercel.app",
@@ -193,19 +181,7 @@ export default function ProjectPortfolio() {
             ],
             tags: ["CyberSec", "Corporate"]
         },
-        {
-            title: "Gausetu - Gaushala Management",
-            url: "https://gausetu.vercel.app/",
-            icon: "fas fa-leaf",
-            tech: "Next.js • MongoDB • Node.js • Tailwind CSS • JWT",
-            description: [
-                "Built comprehensive gaushala (cow shelter) management system",
-                "Implemented donation tracking and volunteer management",
-                "Developed cattle health monitoring and feeding schedules",
-                "Created transparency portal for donors and supporters"
-            ],
-            tags: ["Social Impact", "Non-Profit"]
-        }
+
     ]
 
     return (

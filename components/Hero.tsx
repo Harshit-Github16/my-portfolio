@@ -12,7 +12,7 @@ export default function Hero() {
     const roles = [
         'Full-Stack Developer',
         'AI Solutions Architect',
-        'Front-end Developer',
+        'React.js Expert',
         'Team Lead',
         'Tech Innovator'
     ]
@@ -31,7 +31,7 @@ export default function Hero() {
             setTypingSpeed(isDeleting ? 30 : 150)
 
             if (!isDeleting && text === fullText) {
-                setTimeout(() => setIsDeleting(true), 500)
+                setTimeout(() => setIsDeleting(true), 2000)
             } else if (isDeleting && text === '') {
                 setIsDeleting(false)
                 setLoopNum(loopNum + 1)
@@ -42,118 +42,96 @@ export default function Hero() {
         return () => clearTimeout(timer)
     }, [text, isDeleting, loopNum, typingSpeed, roles])
 
-    const scrollToContact = () => {
-        document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
-    }
-
-    const scrollToProjects = () => {
-        document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })
-    }
-
     return (
-        <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 md:pt-16">
-            {/* Background Animation */}
-            <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute -inset-10 opacity-50">
-                    <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-white rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-float"></div>
-                    <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-gray-400 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-float" style={{ animationDelay: '2s' }}></div>
-                    <div className="absolute bottom-1/4 left-1/3 w-72 h-72 bg-gray-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-float" style={{ animationDelay: '4s' }}></div>
-                </div>
+        <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden py-20 bg-[#0a0a0a]">
+            {/* Geometric Background Lines */}
+            <div className="absolute inset-0 opacity-20 hidden lg:block">
+                <div className="geometric-line w-96 h-96 top-20 left-10 rotate-45"></div>
+                <div className="geometric-line w-64 h-64 bottom-20 right-20 -rotate-12"></div>
             </div>
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Orange Accent Bar - Only on Desktop */}
+            <div className="hidden lg:block absolute left-0 top-0 w-20 h-full bg-orange"></div>
+
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+                <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     {/* Left Content */}
-                    <div className="text-center lg:text-left animate-fadeInLeft">
-                        <div className="mb-6">
-                            <p className="text-gray-400 text-lg mb-2">Hello, I'm</p>
-                            <h1 className="text-5xl lg:text-6xl font-bold mb-4">
-                                <span className="gradient-text">Harshit Sharma</span>
+                    <div className="text-center lg:text-left space-y-6 lg:space-y-8 animate-fadeInLeft">
+                        {/* Badge */}
+                        <div className="inline-block">
+                            <span className="badge-orange px-6 py-2 text-xs sm:text-sm">FULL-STACK DEVELOPER</span>
+                        </div>
+
+                        {/* Main Heading */}
+                        <div className="space-y-3 lg:space-y-4">
+                            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-white">
+                                Harshit Sharma
                             </h1>
-                            <div className="text-2xl lg:text-3xl text-gray-300 mb-6 h-12">
-                                <span className="typing-animation">{text}</span>
+                            <div className="h-12 sm:h-14 lg:h-16 flex items-center justify-center lg:justify-start">
+                                <h2 className="text-lg sm:text-xl lg:text-2xl font-medium text-gray-400">
+                                    A Professional <span className="text-orange">{text}</span>
+                                    <span className="animate-pulse text-orange">|</span>
+                                </h2>
                             </div>
                         </div>
 
-                        <p className="text-xl text-gray-400 mb-8 max-w-2xl">
-                            Senior Full-Stack Developer in <span className="text-white font-semibold">Jodhpur, Rajasthan</span> with <span className="text-white font-semibold">4.5+ years</span> of experience
-                            building cutting-edge web applications and AI-powered solutions. Expert in Next.js, React.js, and modern web technologies
-                            serving clients across Rajasthan and India.
+                        {/* Description */}
+                        <p className="text-base sm:text-lg text-gray-400 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                            Senior Full-Stack Developer from Jodhpur, Rajasthan with 4.5+ years
+                            of experience crafting exceptional digital experiences and AI-powered solutions.
                         </p>
 
+                        {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <button
-                                onClick={scrollToContact}
-                                className="btn-primary px-8 py-3 text-lg font-semibold"
-                            >
-                                <i className="fas fa-envelope mr-2"></i>
-                                Get In Touch
-                            </button>
-                            <button
-                                onClick={scrollToProjects}
-                                className="px-8 py-3 text-lg font-semibold border-2 border-white text-white rounded-lg hover:bg-white hover:text-black transition-all duration-300"
-                            >
-                                <i className="fas fa-eye mr-2"></i>
-                                View My Work
-                            </button>
+                            <a href="#contact" className="btn-primary text-sm sm:text-base">
+                                Download CV
+                            </a>
+                            <a href="#projects" className="btn-secondary text-sm sm:text-base">
+                                My Work
+                            </a>
                         </div>
 
-                        {/* Social Links */}
-                        <div className="flex justify-center lg:justify-start space-x-6 mt-8">
-                            <a
-                                href="https://www.linkedin.com/in/harshit-sharma-9722a51a5"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-gray-400 hover:text-white hover-glow p-3 rounded-full bg-gray-800 hover:bg-gray-700 transition-all duration-300"
-                            >
-                                <i className="fab fa-linkedin text-xl"></i>
-                            </a>
-                            <a
-                                href="mailto:harshit0150@gmail.com"
-                                className="text-gray-400 hover:text-white hover-glow p-3 rounded-full bg-gray-800 hover:bg-gray-700 transition-all duration-300"
-                            >
-                                <i className="fas fa-envelope text-xl"></i>
-                            </a>
-                            <a
-                                href="tel:+919928005564"
-                                className="text-gray-400 hover:text-white hover-glow p-3 rounded-full bg-gray-800 hover:bg-gray-700 transition-all duration-300"
-                            >
-                                <i className="fas fa-phone text-xl"></i>
-                            </a>
+                        {/* Stats */}
+                        <div className="grid grid-cols-3 gap-4 sm:gap-8 pt-6 lg:pt-8 border-t border-gray-800">
+                            <div className="text-center lg:text-left">
+                                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange mb-1">4.5+</div>
+                                <div className="text-xs sm:text-sm text-gray-500 uppercase tracking-wide">Years</div>
+                            </div>
+                            <div className="text-center lg:text-left">
+                                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange mb-1">17+</div>
+                                <div className="text-xs sm:text-sm text-gray-500 uppercase tracking-wide">Projects</div>
+                            </div>
+                            <div className="text-center lg:text-left">
+                                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange mb-1">75K+</div>
+                                <div className="text-xs sm:text-sm text-gray-500 uppercase tracking-wide">Users</div>
+                            </div>
                         </div>
                     </div>
 
-                    {/* Right Content - Profile Image */}
-                    <div className="flex justify-center lg:justify-end animate-fadeInRight">
-                        <div className="relative">
-                            <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl hover-glow">
+                    {/* Right Content - Image */}
+                    <div className="relative flex justify-center lg:justify-end animate-fadeInRight mt-8 lg:mt-0">
+                        <div className="relative w-64 h-80 sm:w-80 sm:h-96 lg:w-96 lg:h-[500px] xl:w-[450px] xl:h-[600px]">
+                            {/* Geometric Frame */}
+                            <div className="absolute inset-0 border-2 border-gray-800 -rotate-3"></div>
+                            <div className="absolute inset-0 border-2 border-orange rotate-3"></div>
+
+                            {/* Image Container */}
+                            <div className="relative w-full h-full overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
                                 <Image
                                     src="/myphoto.JPG"
                                     alt="Harshit Sharma"
-                                    width={400}
-                                    height={400}
-                                    className="w-full h-full object-cover"
+                                    fill
+                                    className="object-cover"
                                     priority
                                 />
                             </div>
-                            {/* Floating Elements */}
-                            <div className="absolute -top-4 -right-4 w-20 h-20 bg-white rounded-full flex items-center justify-center animate-float">
-                                <i className="fas fa-code text-black text-2xl"></i>
-                            </div>
-                            <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center animate-float" style={{ animationDelay: '1s' }}>
-                                <i className="fas fa-brain text-white text-xl"></i>
-                            </div>
-                            <div className="absolute top-1/2 -left-8 w-12 h-12 bg-gray-400 rounded-full flex items-center justify-center animate-float" style={{ animationDelay: '2s' }}>
-                                <i className="fas fa-rocket text-black text-sm"></i>
+
+                            {/* Experience Badge */}
+                            <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-orange text-white p-4 sm:p-6 rounded-lg shadow-2xl">
+                                <div className="text-3xl sm:text-4xl font-bold">06</div>
+                                <div className="text-xs sm:text-sm uppercase tracking-wide">Years of<br />Experience</div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                {/* Scroll Indicator */}
-                <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-                    <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
-                        <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-pulse"></div>
                     </div>
                 </div>
             </div>

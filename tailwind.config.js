@@ -7,14 +7,13 @@ module.exports = {
     ],
     theme: {
         extend: {
-            fontFamily: {
-                'inter': ['Inter', 'sans-serif'],
-            },
             colors: {
-                'primary': '#1e40af',
-                'secondary': '#0f172a',
-                'accent': '#3b82f6',
-            }
+                'orange': '#ff5722',
+                'dark': '#0a0a0a',
+                'darker': '#050505',
+                'card': '#1a1a1a',
+                'border': '#2a2a2a',
+            },
         },
     },
     plugins: [],

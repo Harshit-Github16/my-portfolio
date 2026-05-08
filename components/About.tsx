@@ -1,145 +1,154 @@
-export default function About() {
-    const stats = [
-        { number: '4.5+', label: 'Years Experience' },
-        { number: '16+', label: 'Projects Completed' },
-        { number: '75K+', label: 'Users Served' },
-        { number: '8+', label: 'Industries' },
-    ]
+'use client'
 
-    const highlights = [
-        {
-            icon: 'fas fa-users',
-            title: 'Team Leadership',
-            description: 'Leading cross-functional teams of 8+ developers in delivering enterprise-grade applications'
-        },
-        {
-            icon: 'fas fa-brain',
-            title: 'AI Innovation',
-            description: 'Specialized in integrating cutting-edge AI technologies like LangChain and OpenAI APIs'
-        },
-        {
-            icon: 'fas fa-rocket',
-            title: 'Performance',
-            description: 'Optimized applications serving 25K+ concurrent users with sub-200ms response times'
-        },
-        {
-            icon: 'fas fa-award',
-            title: 'Recognition',
-            description: 'Employee of the Year 2024 for outstanding leadership and technical excellence'
-        }
+import { useState } from 'react'
+import Image from 'next/image'
+
+export default function About() {
+    const [activeImage, setActiveImage] = useState(0)
+
+    const images = [
+        { src: '/image3.jpeg', alt: 'Harshit Sharma - Professional Photo 3' },
+        { src: '/image2.jpeg', alt: 'Harshit Sharma - Professional Photo 2' },
+        { src: '/image4.PNG', alt: 'Harshit Sharma - Professional Photo 2' },
+
     ]
 
     return (
-        <section id="about" className="py-20 bg-gray-900/50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-                        About <span className="gradient-text">Me</span>
+        <section id="about" className="section bg-[#050505] relative overflow-hidden">
+            {/* Geometric Background */}
+            <div className="absolute inset-0 opacity-10">
+                <div className="geometric-line w-96 h-96 top-20 right-10 rotate-12"></div>
+            </div>
+
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                {/* Section Header */}
+                <div className="text-center mb-16 animate-fadeInUp">
+                    <span className="badge-orange mb-4 px-6 py-2">ABOUT ME</span>
+                    <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-white">
+                        Read About My Life<br />
+                        <span className="text-[#ff5722]">Struggle Story!</span>
                     </h2>
-                    <div className="section-divider w-24 mx-auto mb-8"></div>
-                    <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-                        Leading Full Stack Developer in Jodhpur, Rajasthan, passionate about creating innovative solutions that bridge the gap between
-                        cutting-edge technology and real-world business needs across India.
-                    </p>
+                    <div className="section-divider mb-6"></div>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-                    {/* Left Content */}
+                {/* Main Content */}
+                <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+                    {/* Left - Image */}
                     <div className="animate-fadeInLeft">
-                        <h3 className="text-2xl font-bold mb-6 text-white">My Journey</h3>
-                        <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
-                            <p>
-                                I'm a <span className="text-white font-semibold">Senior Full-Stack Developer based in Jodhpur, Rajasthan</span> with over
-                                4.5 years of experience in architecting and delivering cutting-edge web applications across India.
-                                My journey began as a Junior Frontend Developer, and through continuous learning and
-                                dedication, I've evolved into a technical leader specializing in AI-driven development.
-                            </p>
-                            <p>
-                                Currently serving as a <span className="text-gray-300 font-semibold">Team Lead</span> at
-                                Now a Wave Technologies in Jodhpur, I lead cross-functional teams in building enterprise-grade
-                                applications that serve thousands of users worldwide. My expertise spans the entire
-                                development lifecycle, from concept to deployment, with a focus on Next.js and React.js development.
-                            </p>
-                            <p>
-                                As a <span className="text-gray-400 font-semibold">Next.js Developer in Rajasthan</span>, I'm particularly passionate about AI integration and
-                                have successfully implemented numerous automation systems using LangChain, OpenAI APIs,
-                                and other cutting-edge technologies that have reduced manual processing time by up to 65%.
-                            </p>
-                        </div>
-
-                        <div className="mt-8">
-                            <h4 className="text-xl font-semibold mb-4 text-white">Core Values</h4>
-                            <div className="grid grid-cols-2 gap-4">
-                                <div className="flex items-center space-x-2">
-                                    <i className="fas fa-check-circle text-white"></i>
-                                    <span className="text-gray-300">Innovation</span>
-                                </div>
-                                <div className="flex items-center space-x-2">
-                                    <i className="fas fa-check-circle text-white"></i>
-                                    <span className="text-gray-300">Quality</span>
-                                </div>
-                                <div className="flex items-center space-x-2">
-                                    <i className="fas fa-check-circle text-white"></i>
-                                    <span className="text-gray-300">Collaboration</span>
-                                </div>
-                                <div className="flex items-center space-x-2">
-                                    <i className="fas fa-check-circle text-white"></i>
-                                    <span className="text-gray-300">Growth</span>
-                                </div>
+                        <div className="relative">
+                            {/* Main Image */}
+                            <div className="relative h-[500px] rounded-lg overflow-hidden border-2 border-[#2a2a2a] hover:border-[#ff5722] transition-all">
+                                <Image
+                                    src={images[activeImage].src}
+                                    alt={images[activeImage].alt}
+                                    fill
+                                    className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                                />
                             </div>
+
+                            {/* Thumbnail Gallery */}
+                            <div className="grid grid-cols-3 gap-4 mt-6">
+                                {images.map((image, index) => (
+                                    <button
+                                        key={index}
+                                        onClick={() => setActiveImage(index)}
+                                        className={`relative h-24 rounded-lg overflow-hidden border-2 transition-all ${activeImage === index
+                                            ? 'border-[#ff5722]'
+                                            : 'border-[#2a2a2a] hover:border-[#ff5722]'
+                                            }`}
+                                    >
+                                        <Image
+                                            src={image.src}
+                                            alt={image.alt}
+                                            fill
+                                            className="object-cover grayscale"
+                                        />
+                                    </button>
+                                ))}
+                            </div>
+
+
                         </div>
                     </div>
 
-                    {/* Right Content - Stats */}
-                    <div className="animate-fadeInRight">
-                        <div className="grid grid-cols-2 gap-6">
-                            {stats.map((stat, index) => (
-                                <div key={index} className="glass p-6 rounded-xl text-center hover-glow">
-                                    <div className="text-3xl lg:text-4xl font-bold gradient-text mb-2">
-                                        {stat.number}
+                    {/* Right - Content */}
+                    <div className="space-y-6 animate-fadeInRight">
+                        <div>
+                            <h3 className="text-3xl font-bold text-white mb-6">
+                                I'm a <span className="text-[#ff5722]">Senior Full-Stack Developer</span>
+                            </h3>
+                            <div className="space-y-4 text-gray-400 leading-relaxed">
+                                <p>
+                                    Based in <span className="text-white font-semibold">Jodhpur, Rajasthan</span>, with over 4.5 years
+                                    of hands-on experience building scalable web applications that serve thousands of users daily.
+                                </p>
+                                <p>
+                                    Currently leading a talented team at <span className="text-white font-semibold">Now a Wave Technologies</span>,
+                                    where I architect enterprise-grade solutions and mentor developers to achieve their full potential.
+                                </p>
+                                <p>
+                                    My expertise lies in the <span className="text-white font-semibold">MERN stack</span>, with
+                                    a special focus on <span className="text-white font-semibold">AI integration</span> using
+                                    LangChain and OpenAI APIs.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Skills Progress */}
+                        <div className="space-y-4 pt-6">
+                            {[
+                                { name: 'Reactjs', level: 90 },
+                                { name: 'HTML / CSS', level: 90 },
+                                { name: 'Nextjs', level: 95 },
+                                { name: 'Express JS', level: 80 }
+                            ].map((skill, index) => (
+                                <div key={index}>
+                                    <div className="flex justify-between mb-2">
+                                        <span className="text-sm font-semibold text-white uppercase tracking-wide">{skill.name}</span>
+                                        <span className="text-sm text-gray-400">{skill.level}%</span>
                                     </div>
-                                    <div className="text-gray-400 font-medium">
-                                        {stat.label}
+                                    <div className="skill-bar">
+                                        <div className="skill-bar-fill" style={{ width: `${skill.level}%` }}></div>
                                     </div>
                                 </div>
                             ))}
                         </div>
+
+                        {/* Buttons */}
+                        <div className="flex gap-4 pt-6">
+                            <a href="#contact" className="btn-primary">
+                                Hire Me
+                            </a>
+                            <a href="#projects" className="btn-secondary">
+                                About Me
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                {/* Highlights */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {highlights.map((highlight, index) => (
-                        <div key={index} className="glass p-6 rounded-xl hover-glow animate-fadeInUp" style={{ animationDelay: `${index * 0.1}s` }}>
-                            <div className="text-3xl text-white mb-4">
-                                <i className={highlight.icon}></i>
-                            </div>
-                            <h4 className="text-xl font-semibold mb-3 text-white">
-                                {highlight.title}
-                            </h4>
-                            <p className="text-gray-400 text-sm leading-relaxed">
-                                {highlight.description}
-                            </p>
-                        </div>
-                    ))}
-                </div>
-
                 {/* Education */}
-                <div className="mt-16 glass p-8 rounded-xl">
-                    <h3 className="text-2xl font-bold mb-6 text-center text-white">Education</h3>
-                    <div className="grid grid-cols-1 gap-8">
-                        <div>
-                            <div className="space-y-4">
-                                <div className="border-l-2 border-white pl-4">
-                                    <h5 className="font-semibold text-white">Master of Computer Applications (MCA)</h5>
-                                    <p className="text-gray-400">Bikaner University • Aug 2024 – Present</p>
-                                    <p className="text-sm text-gray-500">CGPA: 8.7/10</p>
-                                </div>
-                                <div className="border-l-2 border-gray-400 pl-4">
-                                    <h5 className="font-semibold text-white">Bachelor of Computer Applications (BCA)</h5>
-                                    <p className="text-gray-400">Jai Narain Vyas University • 2019 – 2021</p>
-                                    <p className="text-sm text-gray-500">First Class with Distinction</p>
-                                </div>
+                <div className="grid md:grid-cols-2 gap-8">
+                    <div className="card animate-fadeInUp">
+                        <div className="flex gap-4">
+                            <div className="w-16 h-16 rounded-lg bg-[#ff5722] flex items-center justify-center flex-shrink-0">
+                                <i className="fas fa-university text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 className="text-xl font-bold text-white mb-2">Master of Computer Applications</h4>
+                                <p className="text-gray-400 mb-2">Bikaner University • 2024 - Present</p>
+                                <span className="badge-orange text-xs">CGPA: 8.7/10</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
+                        <div className="flex gap-4">
+                            <div className="w-16 h-16 rounded-lg bg-[#2a2a2a] flex items-center justify-center flex-shrink-0">
+                                <i className="fas fa-user-graduate text-[#ff5722] text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 className="text-xl font-bold text-white mb-2">Bachelor of Computer Applications</h4>
+                                <p className="text-gray-400 mb-2">Jai Narain Vyas University • 2019 - 2021</p>
+                                <span className="badge text-xs">First Class with Distinction</span>
                             </div>
                         </div>
                     </div>
