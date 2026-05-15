@@ -7,13 +7,21 @@ export default function Skills() {
 
     const skills = [
         { name: 'React.js', level: 95, icon: 'fab fa-react' },
-        { name: 'Next.js', level: 90, icon: 'fas fa-code' },
-        { name: 'Node.js', level: 90, icon: 'fab fa-node-js' },
-        { name: 'TypeScript', level: 85, icon: 'fab fa-js' },
-        { name: 'MongoDB', level: 80, icon: 'fas fa-database' },
-        { name: 'AI/ML', level: 85, icon: 'fas fa-brain' },
-        { name: 'AWS', level: 75, icon: 'fab fa-aws' },
-        { name: 'Docker', level: 75, icon: 'fab fa-docker' },
+        { name: 'Next.js', level: 95, icon: 'fas fa-code' },
+        { name: 'TypeScript', level: 90, icon: 'fab fa-js' },
+        { name: 'JavaScript', level: 95, icon: 'fab fa-js-square' },
+        { name: 'Node.js', level: 92, icon: 'fab fa-node-js' },
+        { name: 'Express.js', level: 90, icon: 'fas fa-server' },
+        { name: 'MongoDB', level: 88, icon: 'fas fa-database' },
+        { name: 'Tailwind CSS', level: 95, icon: 'fas fa-paint-brush' },
+        { name: 'AI / ML', level: 88, icon: 'fas fa-brain' },
+        { name: 'RAG Systems', level: 85, icon: 'fas fa-robot' },
+        { name: 'LangChain', level: 85, icon: 'fas fa-link' },
+        { name: 'MCP', level: 82, icon: 'fas fa-microchip' },
+        { name: 'OpenAI APIs', level: 90, icon: 'fas fa-bolt' },
+        { name: 'Puppeteer', level: 84, icon: 'fas fa-spider' },
+        { name: 'SEO Optimization', level: 86, icon: 'fas fa-chart-line' },
+
     ]
 
     useEffect(() => {
@@ -55,7 +63,7 @@ export default function Skills() {
                 </div>
 
                 {/* Skills Grid */}
-                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
                     {skills.map((skill, index) => (
                         <div key={index} className="card text-center animate-fadeInUp" style={{ animationDelay: `${index * 0.1}s` }}>
                             <div className="w-20 h-20 mx-auto mb-4 rounded-lg bg-[#2a2a2a] flex items-center justify-center">
@@ -81,9 +89,9 @@ export default function Skills() {
                 {/* Stats */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20">
                     {[
-                        { number: '50+', label: 'Technologies', icon: 'fa-code' },
+                        { number: '10+', label: 'Technologies', icon: 'fa-code' },
                         { number: '4.5+', label: 'Years Experience', icon: 'fa-calendar' },
-                        { number: '17+', label: 'Projects', icon: 'fa-project-diagram' },
+                        { number: '20+', label: 'Projects', icon: 'fa-project-diagram' },
                         { number: '100%', label: 'Quality', icon: 'fa-check-circle' }
                     ].map((stat, index) => (
                         <div key={index} className="stat-card animate-fadeInUp" style={{ animationDelay: `${index * 0.1}s` }}>

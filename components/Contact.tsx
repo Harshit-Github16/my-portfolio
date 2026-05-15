@@ -9,6 +9,8 @@ export default function Contact() {
         subject: '',
         message: ''
     })
+    const [isSubmitting, setIsSubmitting] = useState(false)
+    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({
@@ -17,10 +19,44 @@ export default function Contact() {
         })
     }
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
-        // Handle form submission
-        console.log(formData)
+        setIsSubmitting(true)
+        setSubmitStatus('idle')
+
+        try {
+            // Send email using Web3Forms API (free service)
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    access_key: '1bfdeb48-65d3-484e-9cd1-26eecd328979', // You need to get this from web3forms.com
+                    name: formData.name,
+                    email: formData.email,
+                    subject: formData.subject,
+                    message: formData.message,
+                    to: 'harshit0150@gmail.com',
+                    from_name: 'Portfolio Contact Form',
+                }),
+            })
+
+            const data = await response.json()
+
+            if (data.success) {
+                setSubmitStatus('success')
+                setFormData({ name: '', email: '', subject: '', message: '' })
+                setTimeout(() => setSubmitStatus('idle'), 5000)
+            } else {
+                setSubmitStatus('error')
+            }
+        } catch (error) {
+            console.error('Error sending email:', error)
+            setSubmitStatus('error')
+        } finally {
+            setIsSubmitting(false)
+        }
     }
 
     return (
@@ -81,7 +117,7 @@ export default function Contact() {
                             <div className="flex gap-4">
                                 {[
                                     { icon: 'fab fa-linkedin', url: 'https://www.linkedin.com/in/harshit-sharma-9722a51a5' },
-                                    { icon: 'fab fa-github', url: 'https://github.com/harshit-sharma' },
+                                    { icon: 'fab fa-github', url: 'https://github.com/Harshit-Github16' },
                                     { icon: 'fas fa-envelope', url: 'mailto:harshit0150@gmail.com' },
                                     { icon: 'fas fa-phone', url: 'tel:+919928005564' }
                                 ].map((social, index) => (
@@ -142,8 +178,37 @@ export default function Contact() {
                                     className="form-input resize-none"
                                     required
                                 ></textarea>
-                                <button type="submit" className="btn-primary w-full">
-                                    Send Message
+
+                                {submitStatus === 'success' && (
+                                    <div className="bg-green-500/10 border border-green-500 text-green-500 px-4 py-3 rounded-lg">
+                                        <i className="fas fa-check-circle mr-2"></i>
+                                        Message sent successfully! I'll get back to you soon.
+                                    </div>
+                                )}
+
+                                {submitStatus === 'error' && (
+                                    <div className="bg-red-500/10 border border-red-500 text-red-500 px-4 py-3 rounded-lg">
+                                        <i className="fas fa-exclamation-circle mr-2"></i>
+                                        Failed to send message. Please try again or email directly.
+                                    </div>
+                                )}
+
+                                <button
+                                    type="submit"
+                                    className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed"
+                                    disabled={isSubmitting}
+                                >
+                                    {isSubmitting ? (
+                                        <>
+                                            <i className="fas fa-spinner fa-spin mr-2"></i>
+                                            Sending...
+                                        </>
+                                    ) : (
+                                        <>
+                                            <i className="fas fa-paper-plane mr-2"></i>
+                                            Send Message
+                                        </>
+                                    )}
                                 </button>
                             </form>
                         </div>

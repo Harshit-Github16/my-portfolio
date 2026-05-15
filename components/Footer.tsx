@@ -18,7 +18,7 @@ export default function Footer() {
                         <div className="flex gap-3">
                             {[
                                 { icon: 'fab fa-linkedin', url: 'https://www.linkedin.com/in/harshit-sharma-9722a51a5' },
-                                { icon: 'fab fa-github', url: 'https://github.com/harshit-sharma' },
+                                { icon: 'fab fa-github', url: 'https://github.com/Harshit-Github16' },
                                 { icon: 'fas fa-envelope', url: 'mailto:harshit0150@gmail.com' }
                             ].map((social, index) => (
                                 <a

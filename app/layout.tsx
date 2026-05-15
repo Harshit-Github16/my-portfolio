@@ -1039,7 +1039,7 @@ export default function RootLayout({
             "skills": "Next.js, React.js, Node.js, JavaScript, TypeScript, MongoDB, AI/ML"
         },
         "sameAs": [
-            "https://github.com/harshit-sharma",
+            "https://github.com/Harshit-Github16",
             "https://linkedin.com/in/harshit-sharma"
         ]
     }

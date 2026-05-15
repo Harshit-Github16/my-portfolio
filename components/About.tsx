@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 
 export default function About() {
-    const [activeImage, setActiveImage] = useState(0)
+    const [activeImage, setActiveImage] = useState(2)
 
     const images = [
         { src: '/image3.jpeg', alt: 'Harshit Sharma - Professional Photo 3' },
@@ -47,7 +47,7 @@ export default function About() {
                             </div>
 
                             {/* Thumbnail Gallery */}
-                            <div className="grid grid-cols-3 gap-4 mt-6">
+                            {/* <div className="grid grid-cols-3 gap-4 mt-6">
                                 {images.map((image, index) => (
                                     <button
                                         key={index}
@@ -65,7 +65,7 @@ export default function About() {
                                         />
                                     </button>
                                 ))}
-                            </div>
+                            </div> */}
 
 
                         </div>
