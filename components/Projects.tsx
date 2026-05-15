@@ -78,6 +78,16 @@ export default function Projects() {
         },
         {
             id: 8,
+            title: 'OrderKro',
+            description: 'Restaurant and food ordering platform with modern UI and seamless order management.',
+            technologies: ['Next.js', 'TypeScript', 'MongoDB'],
+            category: 'saas',
+            liveUrl: 'https://orderkro.vercel.app/',
+            featured: true,
+            icon: 'fa-utensils'
+        },
+        {
+            id: 9,
             title: 'Tara4U',
             description: 'Professional business and service platform with modern responsive design.',
             technologies: ['Next.js', 'Tailwind CSS', 'TypeScript'],
@@ -87,7 +97,7 @@ export default function Projects() {
             icon: 'fa-globe'
         },
         {
-            id: 9,
+            id: 10,
             title: 'Bill Karo',
             description: 'GST billing and invoice management SaaS platform for businesses.',
             technologies: ['Next.js', 'Stripe', 'TypeScript'],
@@ -97,7 +107,7 @@ export default function Projects() {
             icon: 'fa-file-invoice-dollar'
         },
         {
-            id: 10,
+            id: 11,
             title: 'AI News Dashboard',
             description: 'AI-powered news aggregation and regeneration platform using LLM workflows.',
             technologies: ['Next.js', 'OpenAI API', 'Puppeteer'],
@@ -107,7 +117,7 @@ export default function Projects() {
             icon: 'fa-newspaper'
         },
         {
-            id: 11,
+            id: 12,
             title: 'The Dance Tales',
             description: 'Creative dance academy website with elegant animations and modern UI.',
             technologies: ['React.js', 'Tailwind CSS', 'Framer Motion'],

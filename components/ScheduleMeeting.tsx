@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function ScheduleMeeting() {
     const [showScheduler, setShowScheduler] = useState(false)
@@ -14,6 +14,20 @@ export default function ScheduleMeeting() {
         time: '',
         topic: ''
     })
+
+    // Disable body scroll when modal is open
+    useEffect(() => {
+        if (showScheduler) {
+            document.body.style.overflow = 'hidden'
+        } else {
+            document.body.style.overflow = 'unset'
+        }
+
+        // Cleanup on unmount
+        return () => {
+            document.body.style.overflow = 'unset'
+        }
+    }, [showScheduler])
 
     const handleScheduleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         setMeetingData({
