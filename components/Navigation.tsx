@@ -49,7 +49,7 @@ export default function Navigation() {
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
                     <Link href="#home" className="text-2xl font-bold text-white">
-                        Cod<span className="text-[#ff5722]">er</span>
+                        Har<span className="text-[#ff5722]">shit</span>
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -59,8 +59,8 @@ export default function Navigation() {
                                 key={item.name}
                                 href={item.href}
                                 className={`text-sm font-medium transition-all uppercase tracking-wide ${activeSection === item.href.substring(1)
-                                        ? 'text-[#ff5722]'
-                                        : 'text-gray-400 hover:text-white'
+                                    ? 'text-[#ff5722]'
+                                    : 'text-gray-400 hover:text-white'
                                     }`}
                                 onClick={() => setActiveSection(item.href.substring(1))}
                             >
@@ -95,8 +95,8 @@ export default function Navigation() {
                                 key={item.name}
                                 href={item.href}
                                 className={`block px-4 py-3 rounded text-sm font-medium uppercase tracking-wide transition-all ${activeSection === item.href.substring(1)
-                                        ? 'text-[#ff5722] bg-[#2a2a2a]'
-                                        : 'text-gray-400 hover:text-white hover:bg-[#2a2a2a]'
+                                    ? 'text-[#ff5722] bg-[#2a2a2a]'
+                                    : 'text-gray-400 hover:text-white hover:bg-[#2a2a2a]'
                                     }`}
                                 onClick={() => {
                                     setActiveSection(item.href.substring(1))

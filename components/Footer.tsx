@@ -10,7 +10,7 @@ export default function Footer() {
                     {/* Brand */}
                     <div>
                         <h3 className="text-2xl font-bold text-white mb-4">
-                            Cod<span className="text-[#ff5722]">er</span>
+                            Har<span className="text-[#ff5722]">shit</span>
                         </h3>
                         <p className="text-gray-400 mb-4">
                             Senior Full-Stack Developer from Jodhpur, Rajasthan, specializing in AI-powered solutions.
