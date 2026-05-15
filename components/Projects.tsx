@@ -42,7 +42,7 @@ export default function Projects() {
             description: 'AI-powered website performance and optimization tracking dashboard.',
             technologies: ['Next.js', 'Lighthouse', 'AI'],
             category: 'ai',
-            liveUrl: 'https://performance-tracker-testing.vercel.app/dashboard',
+            liveUrl: 'https://performance-tracker-testing.vercel.app',
             featured: true,
             icon: 'fa-gauge-high'
         },
@@ -72,7 +72,7 @@ export default function Projects() {
             description: 'Algorithmic trading dashboard with automated strategy execution and analytics.',
             technologies: ['React.js', 'Node.js', 'WebSocket'],
             category: 'fintech',
-            liveUrl: 'https://algo-trade-plum.vercel.app/dashboard',
+            liveUrl: 'https://algo-trade-plum.vercel.app/',
             featured: true,
             icon: 'fa-robot'
         },
